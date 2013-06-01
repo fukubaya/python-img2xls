@@ -11,10 +11,10 @@ pngやjpgなどの画像ファイルをxlsに変換する
 Requirements
 ======================================================================
 PIL
-http://www.pythonware.com/products/pil/
+ http://www.pythonware.com/products/pil/
 
 Python Excel
-http://www.python-excel.org/
+ http://www.python-excel.org/
 
 
 How to use
@@ -32,14 +32,17 @@ img2xlsをimportして，画像ファイルのpathを渡すだけ．
 
 引数は以下のとおり
 
-* imgpath
-** 画像ファイルのファイルパス
-* scale (default=1.0)
-** セルの大きさ．1.0でデフォルトのexcelの高さと同じになる．
-* style_generator (default=img2xls.coloured_cell_style_generator)
-** セルにどのように色を付けるかの指定．この例では色付きのテキストを使用し，フォントはメイリオ，2.5pt (10pt * 0.25)．
-* text_for_pixel (default=None)
-** テキストで塗り潰す場合のテキスト．日本語の場合はunicodeで渡す．""もしくはNoneを指定すると何も書かない．
+imgpath
+ 画像ファイルのファイルパス
+
+scale (default=1.0)
+ セルの大きさ．1.0でデフォルトのexcelの高さと同じになる．
+
+style_generator (default=img2xls.coloured_cell_style_generator)
+ セルにどのように色を付けるかの指定．この例では色付きのテキストを使用し，フォントはメイリオ，2.5pt (10pt * 0.25)．
+
+text_for_pixel (default=None)
+ テキストで塗り潰す場合のテキスト．日本語の場合はunicodeで渡す．""もしくはNoneを指定すると何も書かない．
 
 
 sample.py
