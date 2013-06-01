@@ -4,7 +4,7 @@
 # Created by FUKUBAYASHI Yuichiro on 2013/05/03
 # Copyright (c) 2013, FUKUBAYASHI Yuichiro
 # 
-# last update: <2013/06/01 16:08:05>
+# last update: <2013/06/01 17:01:32>
 # 
 
 import os.path
@@ -87,6 +87,7 @@ def coloured_text_style_generator(scale, fontname='Arial'):
         fnt.colour_index = colour_index
         fnt.height = int(200*scale)
         fnt.name = fontname
+        fnt.bold = True
         style.font = fnt
 
         align = xlwt.Alignment()
